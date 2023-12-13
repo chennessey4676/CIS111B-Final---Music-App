@@ -115,6 +115,7 @@ public class ArtistController implements Initializable {
       
       @return The text entered by the user from the text field.
    */
+   
     public TextField getArtistSearch()
     {
       return artistSearch;
