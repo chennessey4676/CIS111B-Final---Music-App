@@ -30,7 +30,7 @@
       </ImageView>
       <Label style="-fx-text-fill: White;" styleClass="glowing-text" text="Enter Artist Name:" textFill="WHITE">
          <font>
-            <Font name="MV Boli" size="17.0" />
+            <Font name="MV Boli" size="18.0" />
          </font>
          <VBox.margin>
             <Insets bottom="-12.0" />
@@ -72,14 +72,14 @@
                   <Image url="@Border.png" />
                </image>
                <HBox.margin>
-                  <Insets bottom="-11.0" top="-9.0" />
+                  <Insets bottom="-11.0" top="-15.0" />
                </HBox.margin>
             </ImageView>
          </children>
       </HBox>
       <Label fx:id="artistNameLabel" styleClass="glowing-text2" text="Artist Name" textFill="WHITE">
          <font>
-            <Font name="MV Boli" size="16.0" />
+            <Font name="MV Boli" size="18.0" />
          </font>
          <VBox.margin>
             <Insets bottom="7.0" top="-8.0" />
@@ -87,7 +87,7 @@
       </Label>
       <Label fx:id="dateOfBirthLabel" styleClass="glowing-text" text="Date of Birth" textFill="WHITE">
          <font>
-            <Font name="MV Boli" size="16.0" />
+            <Font name="MV Boli" size="18.0" />
          </font>
          <VBox.margin>
             <Insets bottom="7.0" />
@@ -95,7 +95,7 @@
       </Label>
       <Label fx:id="countryLabel" styleClass="glowing-text2" text="Country" textFill="WHITE">
          <font>
-            <Font name="MV Boli" size="16.0" />
+            <Font name="MV Boli" size="18.0" />
          </font>
          <VBox.margin>
             <Insets bottom="7.0" />
@@ -103,7 +103,7 @@
       </Label>
       <Label fx:id="genderLabel" styleClass="glowing-text" text="Gender" textFill="WHITE">
          <font>
-            <Font name="MV Boli" size="16.0" />
+            <Font name="MV Boli" size="18.0" />
          </font>
          <VBox.margin>
             <Insets bottom="7.0" />
@@ -111,7 +111,7 @@
       </Label>
       <Label fx:id="genreLabel" styleClass="glowing-text2" text="Genre" textFill="WHITE">
          <font>
-            <Font name="MV Boli" size="16.0" />
+            <Font name="MV Boli" size="18.0" />
          </font>
          <VBox.margin>
             <Insets bottom="7.0" />
@@ -119,7 +119,7 @@
       </Label>
       <Label fx:id="firstReleaseLabel" styleClass="glowing-text" stylesheets="@styles.css" text="First Release" textFill="WHITE">
          <font>
-            <Font name="MV Boli" size="16.0" />
+            <Font name="MV Boli" size="18.0" />
          </font>
          <VBox.margin>
             <Insets bottom="2.0" />
@@ -131,7 +131,7 @@
       <HBox prefHeight="100.0" prefWidth="200.0" />
       <Label text="lıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıı" textFill="WHITE">
          <VBox.margin>
-            <Insets top="17.0" />
+            <Insets top="20.0" />
          </VBox.margin>
       </Label>
       <VBox alignment="BOTTOM_CENTER" prefHeight="329.0" prefWidth="600.0" />
