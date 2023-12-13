@@ -98,13 +98,63 @@ public class MainApp extends Application {
                   SimpleDateFormat newDateFormat = new SimpleDateFormat("MM-dd-yyyy");
                   String formattedDateOfBirth = newDateFormat.format(originalDateFormat.parse(dateOfBirth));
                   
-                  controller.updateArtistName("Artist Name: " + artistName);
-                  controller.updateDateOfBirth("Date of Birth: " + formattedDateOfBirth);
-                  controller.updateCountry("Country: " + artistCountry);
-                  controller.updateGender("Gender: " + artistGender);
-                  controller.updateGenre("Genre: " + artistGenre);
-                  controller.updateFirstRelease("First Release: " + firstRelease);
+                  // Set any null values to Unknown text for neatness.
+                  
+                  if (artistName == null)
+                  {
+                     controller.updateArtistName("Artist Name: " + "Unknown");
+                  }
+                  else
+                  {
+                     controller.updateArtistName("Artist Name: " + artistName);
+                  }
+                  
+                  if (formattedDateOfBirth == null)
+                  {
+                     controller.updateDateOfBirth("Date of Birth: " + "Unknown");
+                  }
+                  else
+                  {
+                     controller.updateDateOfBirth("Date of Birth: " + formattedDateOfBirth);
+                  }
+                  
+                  if (artistCountry == null)
+                  {
+                     controller.updateCountry("Country: " + "Unknown");
+                  }
+                  else
+                  {
+                     controller.updateCountry("Country: " + artistCountry);
+                  }
+                  
+                  if (artistGender == null)
+                  {
+                     controller.updateGender("Gender: " + "Unknown");
+                  }
+                  else
+                  {
+                     controller.updateGender("Gender: " + artistGender);
+                  }
+                  
+                  if (artistGenre == null)
+                  {
+                     controller.updateGenre("Genre: " + "Unknown");
+                  }
+                  else
+                  {
+                     controller.updateGenre("Genre: " + artistGenre);
+                  }
+                  
+                  if (firstRelease == null)
+                  {
+                     controller.updateFirstRelease("First Release: " + "Unknown");
+                  }
+                  else
+                  {
+                     controller.updateFirstRelease("First Release: " + firstRelease);
+                  }
                }
+               // Error catching
                catch (ParseException e)
                {
                   e.printStackTrace();
