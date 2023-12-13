@@ -6,10 +6,9 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-   /**
-   * Controller class for managing artist information in the UI.
-   */
-
+/**
+   Controller class for managing artist information in the UI.
+*/
 public class ArtistController implements Initializable {
 
     @FXML
@@ -98,5 +97,25 @@ public class ArtistController implements Initializable {
     
     public void updateFirstRelease(String firstRelease) {
         firstReleaseLabel.setText(firstRelease);
+    }
+    
+    /**
+      An accessor method that gets the search button from the GUI.
+      
+      @return The search button from the GUI.
+   */
+    public Button getSearchButton()
+    {
+      return searchButton;
+    }
+    
+    /**
+      An accessor method that gets the text entered by the user from the text field.
+      
+      @return The text entered by the user from the text field.
+   */
+    public TextField getArtistSearch()
+    {
+      return artistSearch;
     }
 }
