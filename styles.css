@@ -1,0 +1,19 @@
+.background {
+    -fx-background-image: url('background.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    }
+
+.glowing-text {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #27cff5, 7, 0, 0, 0);
+    }
+    
+.glowing-text2 {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #dd27f5, 5, 0, 0, 0);
+    }
+
+
+    
+    

@@ -10,36 +10,48 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="335.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ArtistController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="335.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ArtistController">
    <children>
-      <Label alignment="TOP_CENTER" style="-fx-text-fill: White;" text="𝄞 MusicVerse Artist Index 𝄞">
+      <Label alignment="TOP_CENTER" styleClass="glowing-text" stylesheets="@styles.css" text="𝄞 MusicVerse Artist Index 𝄞" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font name="Rockwell Condensed" size="24.0" />
+            <Font name="MV Boli" size="25.0" />
          </font>
          <VBox.margin>
             <Insets top="30.0" />
          </VBox.margin>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="artist-image">
          <image>
             <Image url="@Planet.png" />
          </image>
          <VBox.margin>
-            <Insets />
+            <Insets top="-10.0" />
          </VBox.margin>
       </ImageView>
-      <Label style="-fx-text-fill: White;" text="Enter Artist Name:" textFill="WHITE">
+      <Label style="-fx-text-fill: White;" styleClass="glowing-text" text="Enter Artist Name:" textFill="WHITE">
          <font>
-            <Font name="Rockwell Bold" size="14.0" />
+            <Font name="MV Boli" size="17.0" />
          </font>
+         <VBox.margin>
+            <Insets bottom="-12.0" />
+         </VBox.margin>
       </Label>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <TextField fx:id="artistSearch">
+            <TextField fx:id="artistSearch" style="-fx-border-radius: 50px;;" styleClass="element" stylesheets="@styles.css">
                <HBox.margin>
-                  <Insets />
-               </HBox.margin></TextField>
-            <Button fx:id="searchButton" mnemonicParsing="false" text="Search" />
+                  <Insets bottom="-5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="MV Boli" size="12.0" />
+               </font></TextField>
+            <Button fx:id="searchButton" mnemonicParsing="false" styleClass="search-button" stylesheets="@styles.css" text="Search">
+               <font>
+                  <Font name="MV Boli" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="-5.0" />
+               </HBox.margin></Button>
          </children>
          <VBox.margin>
             <Insets bottom="40.0" top="20.0" />
@@ -55,75 +67,73 @@
       </ImageView>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label text="lıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılııv" textFill="WHITE">
+            <ImageView fitHeight="80.0" fitWidth="349.0">
+               <image>
+                  <Image url="@Border.png" />
+               </image>
                <HBox.margin>
-                  <Insets bottom="10.0" top="10.0" />
+                  <Insets bottom="-11.0" top="-9.0" />
                </HBox.margin>
-            </Label>
+            </ImageView>
          </children>
       </HBox>
-      <Label fx:id="artistNameLabel" text="Artist Name" textFill="WHITE">
+      <Label fx:id="artistNameLabel" styleClass="glowing-text2" text="Artist Name" textFill="WHITE">
          <font>
-            <Font name="Rockwell" size="14.0" />
+            <Font name="MV Boli" size="16.0" />
          </font>
          <VBox.margin>
-            <Insets bottom="10.0" />
+            <Insets bottom="7.0" top="-8.0" />
          </VBox.margin>
       </Label>
-      <Label fx:id="dateOfBirthLabel" text="Date of Birth" textFill="WHITE">
+      <Label fx:id="dateOfBirthLabel" styleClass="glowing-text" text="Date of Birth" textFill="WHITE">
          <font>
-            <Font name="Rockwell" size="14.0" />
+            <Font name="MV Boli" size="16.0" />
          </font>
          <VBox.margin>
-            <Insets bottom="10.0" />
+            <Insets bottom="7.0" />
          </VBox.margin>
       </Label>
-      <Label fx:id="countryLabel" text="Country" textFill="WHITE">
+      <Label fx:id="countryLabel" styleClass="glowing-text2" text="Country" textFill="WHITE">
          <font>
-            <Font name="Rockwell" size="14.0" />
+            <Font name="MV Boli" size="16.0" />
          </font>
          <VBox.margin>
-            <Insets bottom="10.0" />
+            <Insets bottom="7.0" />
          </VBox.margin>
       </Label>
-      <Label fx:id="genderLabel" text="Gender" textFill="WHITE">
+      <Label fx:id="genderLabel" styleClass="glowing-text" text="Gender" textFill="WHITE">
          <font>
-            <Font name="Rockwell" size="14.0" />
+            <Font name="MV Boli" size="16.0" />
          </font>
          <VBox.margin>
-            <Insets bottom="10.0" />
+            <Insets bottom="7.0" />
          </VBox.margin>
       </Label>
-      <Label fx:id="genreLabel" text="Genre" textFill="WHITE">
+      <Label fx:id="genreLabel" styleClass="glowing-text2" text="Genre" textFill="WHITE">
          <font>
-            <Font name="Rockwell" size="14.0" />
+            <Font name="MV Boli" size="16.0" />
          </font>
          <VBox.margin>
-            <Insets bottom="10.0" />
+            <Insets bottom="7.0" />
          </VBox.margin>
       </Label>
-      <Label fx:id="firstReleaseLabel" text="First Release" textFill="WHITE">
+      <Label fx:id="firstReleaseLabel" styleClass="glowing-text" stylesheets="@styles.css" text="First Release" textFill="WHITE">
          <font>
-            <Font name="Rockwell" size="14.0" />
+            <Font name="MV Boli" size="16.0" />
          </font>
+         <VBox.margin>
+            <Insets bottom="2.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="-7.0" />
+         </padding>
       </Label>
       <HBox prefHeight="100.0" prefWidth="200.0" />
       <Label text="lıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıılıl.lılı.ıllı.ılılıı" textFill="WHITE">
          <VBox.margin>
-            <Insets top="10.0" />
+            <Insets top="17.0" />
          </VBox.margin>
       </Label>
-      <VBox alignment="BOTTOM_CENTER" prefHeight="329.0" prefWidth="600.0">
-         <children>
-            <ImageView fitHeight="90.0" fitWidth="349.0">
-               <image>
-                  <Image url="@Border.png" />
-               </image>
-               <VBox.margin>
-                  <Insets top="-10.0" />
-               </VBox.margin>
-            </ImageView>
-         </children>
-      </VBox>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="329.0" prefWidth="600.0" />
    </children>
 </VBox>
