@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.lang.ArrayIndexOutOfBoundsException;
+import java.lang.NullPointerException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -106,6 +108,7 @@ public class MainApp extends Application {
                catch (ParseException e)
                {
                   e.printStackTrace();
+                  controller.getArtistSearch().setText("Error - please try again");
                }
             }
             catch (MalformedURLException e)
@@ -115,6 +118,11 @@ public class MainApp extends Application {
             catch (IOException e)
             {
                e.printStackTrace();
+            }
+            catch (ArrayIndexOutOfBoundsException | NullPointerException e)
+            {
+               e.printStackTrace();
+               controller.getArtistSearch().setText("Error - please try again");
             }
         });
         

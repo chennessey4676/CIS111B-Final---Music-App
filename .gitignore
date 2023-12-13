@@ -22,3 +22,19 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Ignore macOS system files
+.DS_Store
+._*
+
+# Ignore files created by macOS Finder
+.AppleDouble
+.LSOverride
+Icon
+
+# Ignore temporary files created by macOS
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
