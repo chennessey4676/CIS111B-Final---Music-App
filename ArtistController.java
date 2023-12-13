@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 /**
    Controller class for managing artist information in the UI.
 */
+
 public class ArtistController implements Initializable {
 
     @FXML
