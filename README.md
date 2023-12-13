@@ -1,3 +1,3 @@
 # CIS111B-Final---Music-App
 
-Test
+Project by: Justin Lorenz, Maria Bartholomew, and Collin Hennessey
