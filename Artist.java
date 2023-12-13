@@ -48,7 +48,10 @@ public class Artist
    */
    public String getGender()
    {
-      gender = gender.substring(0, 1).toUpperCase() + gender.substring(1);
+      if (gender != null)
+      {
+         gender = gender.substring(0, 1).toUpperCase() + gender.substring(1);
+      }
       
       return gender;
    }

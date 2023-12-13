@@ -94,9 +94,37 @@ public class MainApp extends Application {
                
                try
                {
-                  SimpleDateFormat originalDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-                  SimpleDateFormat newDateFormat = new SimpleDateFormat("MM-dd-yyyy");
-                  String formattedDateOfBirth = newDateFormat.format(originalDateFormat.parse(dateOfBirth));
+                  if (dateOfBirth.length() == 10)
+                  {
+                     SimpleDateFormat originalDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                     SimpleDateFormat newDateFormat = new SimpleDateFormat("MM-dd-yyyy");
+                     String formattedDateOfBirth = newDateFormat.format(originalDateFormat.parse(dateOfBirth));
+                     
+                     
+                     if (formattedDateOfBirth == null)
+                     {
+                        controller.updateDateOfBirth("Date of Birth: " + "Unknown");
+                     }
+                     else
+                     {
+                        controller.updateDateOfBirth("Date of Birth: " + formattedDateOfBirth);
+                     }
+                  }
+                  else if (dateOfBirth.length() == 4)
+                  {
+                     SimpleDateFormat originalDateFormat = new SimpleDateFormat("yyyy");
+                     SimpleDateFormat newDateFormat = new SimpleDateFormat("yyyy");
+                     String formattedDateOfBirth = newDateFormat.format(originalDateFormat.parse(dateOfBirth));
+                     
+                     if (formattedDateOfBirth == null)
+                     {
+                        controller.updateDateOfBirth("Date of Creation: " + "Unknown");
+                     }
+                     else
+                     {
+                        controller.updateDateOfBirth("Date of Creation: " + formattedDateOfBirth);
+                     }
+                  }
                   
                   // Set any null values to Unknown text for neatness.
                   
@@ -108,16 +136,6 @@ public class MainApp extends Application {
                   {
                      controller.updateArtistName("Artist Name: " + artistName);
                   }
-                  
-                  if (formattedDateOfBirth == null)
-                  {
-                     controller.updateDateOfBirth("Date of Birth: " + "Unknown");
-                  }
-                  else
-                  {
-                     controller.updateDateOfBirth("Date of Birth: " + formattedDateOfBirth);
-                  }
-                  
                   if (artistCountry == null)
                   {
                      controller.updateCountry("Country: " + "Unknown");
