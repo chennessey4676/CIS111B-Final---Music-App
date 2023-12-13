@@ -2,8 +2,8 @@
 
 Project by: 
 
-Justin Lorenz - Data Integration and Business Logic Developer (Model & Controller)
+Justin L. - Data Integration and Business Logic Developer (Model & Controller)
 
-Maria Bartholomew - Graphical Interface Designer/Developer (View & Controller)
+Maria B. - Graphical Interface Designer/Developer (View & Controller)
 
-Collin Hennessey - Project Manager & Test (Production)
+Collin H. - Project Manager & Test (Production)
