@@ -1,0 +1,11 @@
+Members and GitHub URL
+Group Members
+--------------
+Justin Lorenz
+Maria Bartholomew
+Collin Hennessey
+
+
+GitHub URL (Public)
+-------------------
+https://github.com/chennessey4676/CIS111B-Final---Music-App
